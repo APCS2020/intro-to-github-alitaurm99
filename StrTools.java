@@ -41,4 +41,30 @@ public class StrTools{
         String tmp = changeFirstChar(str);//tmp "United"
         System.out.println(tmp);
     }
+    public static String reverse(String str){
+        String tmp = "";
+            for(int i = str.length()-1; i >= 0; i--){
+                tmp += str.substring(i, i+1);
+            }
+            return tmp;
+        }
+    public static String parliword(String str){
+        return str + reverse(str);
+    }
+    public static String parlihalf(String str){
+        String tmp = "";
+        if(str.length() % 2 ==0){
+            tmp = str.substring(0, str.length()/2);
+        }
+        else{
+            tmp = str.substring(0,str.length()/2+1);
+        }
+        return tmp + reverse(str);
+    }
+    public static String parlicompare(String str){
+        reverse()
+
+        }
+    }
 }
+
