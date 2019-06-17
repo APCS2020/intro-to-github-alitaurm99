@@ -62,9 +62,19 @@ public class StrTools{
         return tmp + reverse(str);
     }
     public static String parlicompare(String str){
-        reverse()
-
+        String tmp = "";
+        int j = 0;  
+        for (int i = 0; i < str.length() / 2; i++) {  
+        if ((str.substring(i, i + 1)).equals(str.substring(str.length() - 1- i, str.length() - i))) {  
+                j++;  
+            }  
+        }  
+        if (j == str.length() / 2){
+            System.out.println(tmp + "is a parliword");  
         }
-    }
+        else{  
+            System.out.println(tmp + "is not a parliword");  
+        }  
+    }  
 }
 
